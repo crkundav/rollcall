@@ -1,0 +1,25 @@
+<h1>Course #<%= @course.id %></h1>
+
+<p>
+  <b>Department:</b>
+  <%= @course.department %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @course.number %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @course.title %>
+</p>
+
+<p> <b>Meeting_ID Held_On</b> </P>
+
+ <% @meetings.each do |meeting| %>
+
+  
+  <p> <%= meeting.id.to_s%> &nbsp;&nbsp;&nbsp;&nbsp;<%= meeting.held_on.to_s%></p>
+    
+ <% end %>
